@@ -13,6 +13,6 @@ public class PLPage extends ProjectOne{
 		driver.findElement(By.xpath("(//span[@class='input-group-text'])[3]")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("August Steiner Men's Casual Multifunction")));
 		driver.findElement(By.partialLinkText("August Steiner Men's Casual Multifunction")).click();
-		   
+		    
 	} 
 }
