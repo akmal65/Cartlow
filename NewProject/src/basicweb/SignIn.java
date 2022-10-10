@@ -3,6 +3,7 @@ package basicweb;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -18,12 +19,18 @@ public class SignIn extends ProjectOne {
 
 		driver.findElement(By.xpath("//div[1]/input[@name='password']")).sendKeys("123123123");
 		driver.findElement(By.id("sign-in")).click();
-		// Click on Google sign in 
-//		driver.findElement(By.xpath("//a[@title='Sign In with Google']")).click();
-
-	//	driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("mibote4355@migonom.com");
-
-	//	driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span")).click();
-
+		/* 
+		 * WebElement b=driver.findElement(By.
+		 * xpath("//div[contains(@class,'navbar navbar-expand-lg')]"));
+		 * System.out.println(b.getText()); // String Expected = url; WebElement
+		 * c=driver.findElement(By.xpath("Headphones & wireless audio"));
+		 * System.out.println(c.getText()); if(c.getText().equals(b.getText())){
+		 * System.out.println("Pass"); } else { System.out.println("Fail");
+		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+		 * "(//div[@class='invalid-feedback'])[1]"))); WebElement p =
+		 * driver.findElement(By.xpath("(//div[@class='invalid-feedback'])[1]"));
+		 * System.out.println(p.getText()); }
+		 */
 	}
-}
+}   
+ 

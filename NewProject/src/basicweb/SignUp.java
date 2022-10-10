@@ -18,18 +18,17 @@ public class SignUp extends ProjectOne {
 		driver.findElement(By.xpath("//input[@placeholder='Full name']")).sendKeys("Tester tester");
 		driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
 
-		String Actual = driver.getCurrentUrl();
-		String Expected = url;
-		if (Actual.equalsIgnoreCase(Expected)) {
+		String Actual = driver.getCurrentUrl();  
+		String Expected = url; 
+		if (Actual.equalsIgnoreCase(Expected)) {  
 			System.out.println("Pass");
-		} else { 
-			System.out.println("Fail"); 
-//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		} else {  
+			System.out.println("Fail");  
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='su-email-error']")));
 			WebElement p = driver.findElement(By.xpath("//div[@id='su-email-error']"));
 			System.out.println(p.getText());
 
-		}
+		} 
 	}
 
 }
