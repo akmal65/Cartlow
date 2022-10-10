@@ -13,7 +13,7 @@ public class SignUp extends ProjectOne {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Sign Up']")));
 		driver.findElement(By.xpath("//span[text()='Sign Up']")).click();
-		driver.findElement(By.xpath("(//input[@name='email'])[2]")).sendKeys("333je@lutota.com");
+		driver.findElement(By.xpath("(//input[@name='email'])[2]")).sendKeys("333@lutota.com");
 		driver.findElement(By.xpath("(//input[@name='password'])[2]")).sendKeys("123123123");
 		driver.findElement(By.xpath("//input[@placeholder='Full name']")).sendKeys("Tester tester");
 		driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
